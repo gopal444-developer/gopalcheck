@@ -1,0 +1,161 @@
+ 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  color: #2c3e50;
+  padding: 20px;
+  line-height: 1.6;
+}
+img{
+  border-radius: 50%;
+  
+}
+.branding{
+   text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+}
+ 
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+  color: #0a3d62;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #0a3d62;
+}
+.set{
+  font-size: 1.5rem;
+}
+
+ 
+ #quizForm {
+  max-width: 950px;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1) ,-0 -20px 40px rgba(0, 0, 0, 0.1);
+}
+
+ 
+.question {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.question:last-child {
+  border-bottom: none;
+}
+
+.question p {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #34495e;
+}
+
+ 
+.question label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 100px;
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  padding: 10px 18px;
+  margin: 10px 10px 6px 0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+  font-size: 23px;
+  user-select: none;
+}
+
+.question label:hover {
+  background-color: #d0e7f9;
+  transform: scale(1.03);
+}
+
+ 
+
+.question input[type="radio"]:checked + label {
+  background-color: #3498db;
+  color: white;
+}
+
+ 
+button[type="button"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  height: 50rem;
+  background-color: #0984e3;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="button"]:hover {
+  background-color: #007acc;
+   
+}
+
+ 
+#result {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #27ae60;
+}
+
+ 
+@media (max-width: 600px) {
+  form#quizForm {
+    
+    width: 100%;
+  }
+
+  .question label {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  button[type="button"] {
+    font-size: 14px;
+    padding: 14px;
+    width: 100%;
+  }
+
+  .branding{
+    flex-direction: column;
+  }
+}
+ 
